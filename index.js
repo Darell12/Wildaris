@@ -213,6 +213,21 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    if (partes[0] === "Wildaris") {
+      console.log("cat");
+      contenido.innerHTML = ` <div
+      id="contenido"
+      class="flex gap-4 m-4 min-w-min flex-wrap justify-center"
+    >
+    <div class="bg-neutral-50 py-24 px-6 text-center dark:bg-neutral-900">
+      <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+        Bienvenidos! <br /><span class="text-primary">A Wildari's Store</span>
+      </h1>
+      <a class="btn btn-primary btn-lg" href="#categorias" role="button">Ver Catalogo</a>
+    </div></div>`;
+      return;
+    }
+
     if (partes[0] === "categoria") {
       if (partes.length === 2) {
         console.log("Mostrar Productos");
@@ -229,8 +244,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h1 class="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">Page not found</h1>
                     <p class="mt-6 text-base leading-7">Sorry, we couldn’t find the page you’re looking for.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="/Wildaris" class="rounded-md btn btn-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
-                <a href="/Wildaris" class="text-sm font-semibold btn btn-outline-secondary">Contact support <span aria-hidden="true">&rarr;</span></a>
+                <a href="/#Wildaris" class="rounded-md btn btn-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
+                <a href="/#Wildaris" class="text-sm font-semibold btn btn-outline-secondary">Contact support <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>`;
     }
