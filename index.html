@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ripple es una biblioteca que mejora tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"
+    />
+    <!-- Tailwind es un una libreria de estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-start">
+          <a class="navbar-item font-bold" href="/">Home</a>
+        </div>
+        <ul class="navbar-end">
+          <li>
+            <a class="navbar-item font-bold" href="#categoria/electronica"
+              >Electrónica</a
+            >
+          </li>
+          <li>
+            <a class="navbar-item font-bold" href="#categoria/ropa">Ropa</a>
+          </li>
+          <li>
+            <a class="navbar-item font-bold" href="#categoria/accesorios"
+              >Accesorios</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="contenido"
+        class="flex gap-4 m-4 min-w-min flex-wrap justify-center"
+      >
+      <div class="bg-neutral-50 py-24 px-6 text-center dark:bg-neutral-900">
+        <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+          Bienvenidos! <br /><span class="text-primary">A Wildari's Store</span>
+        </h1>
+        <a class="btn btn-primary btn-lg" href="#categorias" role="button">Ver Catalogo</a>
+      </div></div>
+    </main>
+
+    <footer>
+      <!-- Contenido del pie de página -->
+    </footer>
+  </body>
+</html>
+<script src="index.js"></script>
