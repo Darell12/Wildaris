@@ -182,8 +182,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function mostrarCategorias() {
-    const categorias = ["Electronica", "Ropa", "Accesorios"];
-    
+    const categorias = ["electronica", "ropa", "accesorios"];
+
     const categoriasHTML = categorias
       .map(
         (categoria) =>
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="card-body">
                     <h2 class="card-header h2">${categoria}</h2>
                     <div class="card-footer">
-                        <a class="btn btn-outline-primary" href="#producto/${categoria}/">Ver detalle</a>
+                        <a class="btn btn-outline-primary" href="#categoria/${categoria}">Ver detalle</a>
                     </div>
                 </div>
             </div>`
